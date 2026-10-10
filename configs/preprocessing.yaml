@@ -1,0 +1,16 @@
+filtering:
+  apply: true
+  l_freq: 0.5
+  h_freq: 45.0
+  method: "iir"
+  iir_params:
+    order: 4
+    ftype: "butter"
+  
+windowing:
+  epoch_duration_sec: 30.0
+  overlap_ratio: 0.5
+
+artifacts:
+  apply_asr: false # Normally applied by ds004504 authors
+  apply_ica: false

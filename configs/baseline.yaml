@@ -1,0 +1,36 @@
+features:
+  time_domain:
+    - "mean"
+    - "std"
+    - "variance"
+    - "rms"
+    - "skewness"
+    - "kurtosis"
+  hjorth:
+    - "activity"
+    - "mobility"
+    - "complexity"
+  frequency_domain:
+    method: "welch"
+    bands:
+      delta: [0.5, 4.0]
+      theta: [4.0, 8.0]
+      alpha: [8.0, 13.0]
+      beta: [13.0, 30.0]
+
+models:
+  random_state: 42
+  logistic_regression:
+    max_iter: 2000
+    class_weight: "balanced"
+  svm:
+    kernel: "rbf"
+    C: 1.0
+    gamma: "scale"
+    class_weight: "balanced"
+    probability: true
+  random_forest:
+    n_estimators: 300
+    min_samples_leaf: 2
+    class_weight: "balanced"
+    n_jobs: -1

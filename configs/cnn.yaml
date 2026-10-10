@@ -1,0 +1,20 @@
+cnn:
+  architecture:
+    in_channels: 19
+    num_classes: 3
+    conv1_filters: 16
+    conv1_kernel: 31
+    conv1_stride: 1
+    pool1_size: 4
+    conv2_filters: 32
+    conv2_kernel: 15
+    conv2_stride: 1
+    pool2_size: 4
+    dropout: 0.5
+  training:
+    epochs: 50
+    batch_size: 32
+    learning_rate: 0.001
+    weight_decay: 0.0001
+    early_stopping_patience: 10
+    random_seed: 42

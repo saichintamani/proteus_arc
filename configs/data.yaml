@@ -1,0 +1,33 @@
+dataset:
+  name: "OpenNeuro ds004504"
+  path: "ds004504" # Local path, can be overridden
+  expected_participants: 88
+  classes:
+    - "A" # Alzheimer's
+    - "C" # Healthy Control
+    - "F" # Frontotemporal Dementia
+  mapping:
+    A: "AD"
+    C: "CN"
+    F: "FTD"
+  sampling_rate: 500
+  channels:
+    - "Fp1"
+    - "Fp2"
+    - "F7"
+    - "F3"
+    - "Fz"
+    - "F4"
+    - "F8"
+    - "T3"
+    - "C3"
+    - "Cz"
+    - "C4"
+    - "T4"
+    - "T5"
+    - "P3"
+    - "Pz"
+    - "P4"
+    - "T6"
+    - "O1"
+    - "O2"
