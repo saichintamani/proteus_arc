@@ -1,5 +1,5 @@
 {
-  "id": "saichintamani/proteus-arc-eeg-alzheimers-classification",
+  "id": "saichintamaniai/proteus-arc-eeg-alzheimer-s-classification",
   "title": "Proteus Arc: EEG Alzheimer's Classification",
   "code_file": "notebooks/Proteus_Arc_Real_EEG_Experiments_fixed.ipynb",
   "language": "python",
